@@ -29,14 +29,21 @@ function newRow(students) {
   newRow.insertCell().appendChild(nameNode);
 
   var emailNode = document.createTextNode(students.email);
-  newRow.insertCell().appendChild(emailNode);
+  var cell = newRow.insertCell();
+  cell.className = "d-none d-md-table-cell";
+  cell.appendChild(emailNode);
+  
 
   var phoneNode = document.createTextNode(students.phone);
-  newRow.insertCell().appendChild(phoneNode);
+  var cell2 = newRow.insertCell();
+  cell2.className = "d-none d-md-table-cell";
+  cell2.appendChild(phoneNode);
 
   var courseNode = document.createTextNode(students.course);
   newRow.insertCell().appendChild(courseNode);
 
   var turnNode = document.createTextNode(students.turn);
   newRow.insertCell().appendChild(turnNode);
-}
+
+ 
+};
