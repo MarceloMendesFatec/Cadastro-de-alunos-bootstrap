@@ -2,6 +2,7 @@ $('#inputPhone').mask('(00)00000-0000');
 
 var students = [];
 
+
 function saveStudent() {
   var newStudent = {
     id: students.length + 1,
